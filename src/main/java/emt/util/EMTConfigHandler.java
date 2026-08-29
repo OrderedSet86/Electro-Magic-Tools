@@ -76,16 +76,8 @@ public class EMTConfigHandler {
     public static boolean nightVisionOff;
     public static boolean enchanting;
     public static boolean smoke;
-    public static boolean oneRingSpawn;
     public static boolean removeAmberAndCinnabarMacerating;
     public static List<String> etherealMaceratorWhiteList = new ArrayList<>();
-
-    /**
-     * Loot chance
-     **/
-    public static int chanceOneRing;
-
-    public static int chanceTaintedMjolnir;
 
     /**
      * Researches
@@ -187,19 +179,6 @@ public class EMTConfigHandler {
                 "Disable smoke effect for boots",
                 false,
                 "This effect only appears when the player isn't on the ground").getBoolean(smoke);
-        oneRingSpawn = config
-                .get(RANDOM, "Disable One Ring in dungeon chests", true, "There is a recipe to get this item.")
-                .getBoolean(oneRingSpawn);
-        chanceTaintedMjolnir = config.get(
-                RANDOM,
-                "Tainted Mjolnir spawning change",
-                25,
-                "If you have a lot of mods adding dungeon loot, you should definetely increase this").getInt();
-        chanceOneRing = config.get(
-                RANDOM,
-                "One Ring spawning chance",
-                15,
-                "If you have a lot of mods adding dungeon loot, you should definetely increase this").getInt();
         removeAmberAndCinnabarMacerating = config
                 .get(
                         RANDOM,
