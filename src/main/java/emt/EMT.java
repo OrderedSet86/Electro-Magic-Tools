@@ -26,6 +26,7 @@ import emt.tile.solar.Solars;
 import emt.util.EMTClientEventHandler;
 import emt.util.EMTConfigHandler;
 import emt.util.EMTCreativeTab;
+import emt.util.EMTDungeonChestGenerator;
 import emt.util.EMTEssentiasOutputs;
 import emt.util.EMTEventHandler;
 
@@ -97,6 +98,7 @@ public class EMT {
         if (FMLCommonHandler.instance().getSide().isClient()) {
             MinecraftForge.EVENT_BUS.register(new EMTClientEventHandler());
         }
+        EMTDungeonChestGenerator.generateLoot();
         EMTEntities.registerEMTEntities();
     }
 
