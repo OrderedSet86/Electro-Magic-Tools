@@ -22,7 +22,7 @@ public class EMTConfigHandler {
     public static final String OUTPUTS = "Essentia Generator Outputs";
 
     private static final String IGNORED_UNDER_GTNH = "Ignored when GTNH (dreamcraft) is installed: "
-            + "dungeon loot is controlled by config/TooMuchLoot/loot/dungeonChest.xml there.";
+            + "dungeon loot is controlled by config/TooMuchLoot/loot/dungeonChest.xml in GTNH.";
 
     public static Configuration config;
     public static int etherealProcessorBaseSpeed;
